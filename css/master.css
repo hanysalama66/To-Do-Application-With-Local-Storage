@@ -1,0 +1,123 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("/images/rye-jessen-9FaR_YxVrTg-unsplash.jpg");
+  background-repeat: repeat-x, repeat-y;
+  /* background-size: 50%; */
+  background-size: 50% 700px;
+}
+
+.container {
+  width: 500px;
+  margin: 20px auto;
+}
+
+.form {
+  background-color: #086c52ad;
+
+  border-radius: 6px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  flex: 1;
+  background: rgb(157 206 226 / 83%);
+}
+
+.input:focus {
+  outline: none;
+}
+
+.add {
+  border: none;
+  background-color: #36d3f49e;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.add:hover {
+  background-color: #0ded72;
+}
+
+.tasks {
+  background-color: #086c52ad;
+
+  margin-top: 20px;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.tasks .task {
+  background-color: white;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+  cursor: pointer;
+  border: 1px solid #ccc;
+}
+
+.tasks .task:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.tasks .task:hover {
+  background-color: #f7f7f7;
+}
+
+.tasks .task.done {
+  opacity: 0.5;
+  background-color: #36ff00;
+}
+
+.tasks .task span {
+  font-weight: bold;
+  font-size: 10px;
+  background-color: red;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form .addOne {
+  border: none;
+  background-color: #36d3f49e;
+
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.form .addOne:hover {
+  background-color: #000000;
+}
+@media (max-width: 550px) {
+  .container {
+    width: 333px;
+    margin: 20px auto;
+      }
+  .tasks{
+        width: 260px;
+        margin-left: 20px;
+  }
+  .input{
+overflow: hidden;
+    width: 117px;
+  }
+  .form{
+padding: 10px;
+
+  }
+}
